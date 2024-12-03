@@ -21,7 +21,10 @@ always @(posedge clock) begin
         count = N;
         done = 0;
     end 
+    else if (done) begin
+    end
     else begin
+
         A = {A[N-2:0], Q[N-1]};
         Q = {Q[N-2:0], 1'b0};
 

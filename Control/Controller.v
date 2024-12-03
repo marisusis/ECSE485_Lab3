@@ -70,7 +70,6 @@ always @(posedge clock) begin
 			count = count - 1;
 
 			if (count == 0) begin
-				ACnt = Load;
 				doneCnt = 1;
 				NEXT_STATE = start_state;
 			end
